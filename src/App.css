@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-auto-rows: 150;
+  background-color: aquamarine;
+  grid-gap: 0.1em;
+}
+
+.content {
+  text-align: top-corner;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(165, 154, 154);
+  overflow: none;
+}
+
+.navbar a {
+  float: right;
+  padding: 6px;
+  color: rgb(14, 105, 83);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: rgb(187, 169, 67);
+}
+
+@media screen and (max-width: 300px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.popup {
+  position: fixed;
+  top:0;
+  left:0;
+  width:25%;
+  height:100vh;
+  background-color: antiquewhite;
+
+  dsiplay:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width:640px;
+  background-color: bisque;
+}
